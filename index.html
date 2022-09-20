@@ -8,7 +8,10 @@
 	<script type="text/javascript" class="init">
 $(document).ready(function () {
 	$('#playlist').DataTable({
-		ajax: 'latest.json',
+	ajax: {
+		'url':'latest.json',
+		'dataSrc':''
+	}
 	});
 });
 	</script>
